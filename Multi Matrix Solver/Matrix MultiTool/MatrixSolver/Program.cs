@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Matrix_MultiTool
+namespace MatrixSolver
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace Matrix_MultiTool
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainMenu());
+            Application.Run(new uxMainMenu());
         }
     }
 }
