@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(uxMainMenu));
             this.uxMainMenu_ToolBar = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.scalerMultiplicationCalculatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uxMainMenu_Display = new System.Windows.Forms.Panel();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uxMainMenu_ToolBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -57,6 +57,13 @@
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
+            // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -77,29 +84,22 @@
             this.uxMainMenu_Display.BackColor = System.Drawing.SystemColors.ControlDark;
             this.uxMainMenu_Display.Location = new System.Drawing.Point(12, 38);
             this.uxMainMenu_Display.Name = "uxMainMenu_Display";
-            this.uxMainMenu_Display.Size = new System.Drawing.Size(760, 510);
+            this.uxMainMenu_Display.Size = new System.Drawing.Size(760, 250);
             this.uxMainMenu_Display.TabIndex = 1;
-            // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.newToolStripMenuItem.Text = "New";
-            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // uxMainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(784, 561);
+            this.ClientSize = new System.Drawing.Size(784, 301);
             this.Controls.Add(this.uxMainMenu_Display);
             this.Controls.Add(this.uxMainMenu_ToolBar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.uxMainMenu_ToolBar;
-            this.MaximumSize = new System.Drawing.Size(800, 600);
+            this.MaximumSize = new System.Drawing.Size(800, 340);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.MinimumSize = new System.Drawing.Size(800, 340);
             this.Name = "uxMainMenu";
             this.Text = "Matrix Solver";
             this.uxMainMenu_ToolBar.ResumeLayout(false);

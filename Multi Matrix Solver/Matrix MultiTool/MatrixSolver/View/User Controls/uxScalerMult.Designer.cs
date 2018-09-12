@@ -36,6 +36,7 @@
             this.uxScaler_ColumnsLabel = new System.Windows.Forms.Label();
             this.uxScaler_Label = new System.Windows.Forms.Label();
             this.uxScaler_Matrix = new System.Windows.Forms.DataGridView();
+            this.ux_CalcScalerButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.uxScaler_RowCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ux_Scaler_ColCount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
@@ -110,14 +111,25 @@
             this.uxScaler_Matrix.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.uxScaler_Matrix.Location = new System.Drawing.Point(203, 3);
             this.uxScaler_Matrix.Name = "uxScaler_Matrix";
-            this.uxScaler_Matrix.Size = new System.Drawing.Size(294, 244);
+            this.uxScaler_Matrix.Size = new System.Drawing.Size(554, 244);
             this.uxScaler_Matrix.TabIndex = 7;
             // 
-            // uxScaler_Title
+            // ux_CalcScalerButton
+            // 
+            this.ux_CalcScalerButton.Location = new System.Drawing.Point(22, 147);
+            this.ux_CalcScalerButton.Name = "ux_CalcScalerButton";
+            this.ux_CalcScalerButton.Size = new System.Drawing.Size(170, 39);
+            this.ux_CalcScalerButton.TabIndex = 8;
+            this.ux_CalcScalerButton.Text = "Calculate";
+            this.ux_CalcScalerButton.UseVisualStyleBackColor = true;
+            this.ux_CalcScalerButton.Click += new System.EventHandler(this.ux_CalcScalerButton_Click);
+            // 
+            // uxScalerMultControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.ux_CalcScalerButton);
             this.Controls.Add(this.uxScaler_Matrix);
             this.Controls.Add(this.uxScaler_Label);
             this.Controls.Add(this.uxScaler_ColumnsLabel);
@@ -128,8 +140,8 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Modern No. 20", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "uxScaler_Title";
-            this.Size = new System.Drawing.Size(500, 250);
+            this.Name = "uxScalerMultControl";
+            this.Size = new System.Drawing.Size(760, 250);
             ((System.ComponentModel.ISupportInitialize)(this.uxScaler_RowCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ux_Scaler_ColCount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
@@ -149,5 +161,6 @@
         private System.Windows.Forms.Label uxScaler_ColumnsLabel;
         private System.Windows.Forms.Label uxScaler_Label;
         private System.Windows.Forms.DataGridView uxScaler_Matrix;
+        private System.Windows.Forms.Button ux_CalcScalerButton;
     }
 }

@@ -48,7 +48,7 @@
   <ItemGroup>
     <Compile Include="Controller\Factorization Controller.cs" />
     <Compile Include="Controller\History.cs" />
-    <Compile Include="Controller\Multiplication Controller.cs" />
+    <Compile Include="Controller\Scaler Controller.cs" />
     <Compile Include="Controller\RREF Controller.cs" />
     <Compile Include="Model\HistoryDB.cs" />
     <Compile Include="View\User Controls\uxScalerMult.cs">
