@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controller\Factorization Controller.cs" />
     <Compile Include="Controller\History.cs" />
     <Compile Include="Controller\Scaler Controller.cs" />
     <Compile Include="Controller\RREF Controller.cs" />

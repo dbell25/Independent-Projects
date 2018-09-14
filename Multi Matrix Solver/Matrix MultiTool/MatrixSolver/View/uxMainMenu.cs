@@ -10,16 +10,23 @@ using System.Windows.Forms;
 
 namespace MatrixSolver
 {
+    public delegate void IScaler();
+
     public partial class uxMainMenu : Form
     {
         /// <summary>
         /// Initializes a new uxMainMenu form.
         /// </summary>
-        public uxMainMenu()
+        public uxMainMenu(IScaler scale)
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Menu button to invoke the scaler multiplication tool.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ScalerMult_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (uxMainMenu_Display.Controls.Count != 0) RemoveControl();
